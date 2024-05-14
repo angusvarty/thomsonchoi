@@ -97,7 +97,9 @@ function loop() {
   }
 
   // draw apple
-  context.fillStyle = 'red';
+  let myImage = document.getElementById("myImage");
+  myImage.setAttribute("src", "choi.jpg");
+  context.fillStyle = myImage;
   context.fillRect(apple.x, apple.y, grid-1, grid-1);
 
   // draw snake one cell at a time
